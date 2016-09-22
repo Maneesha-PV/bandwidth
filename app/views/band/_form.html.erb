@@ -1,0 +1,9 @@
+
+<%= form_for :band, url:{:controller => 'band', :action => 'create'} do |f| %>
+    <%= f.label :Lower_frequency%>
+    <%= f.select(:frequency_lower, Band::SELECT_LIST) %>MHz&emsp;
+    <%= f.label :upper_frequency%>
+    <%= f.select(:frequency_upper, Band::SELECT_LIST) %>MHz
+    &emsp;<%= f.submit :submit%>
+<% end %>
+ <br><%= link_to('Logout', destroy_user_session_path, :method => :delete) %></br>
