@@ -8,8 +8,8 @@ class BandController < ApplicationController
 			if @band.save 
 				render plain: " Successfully allocated"
 			else
-				#redirect_to :back, notice:@band.errors
-				render plain: " Band is already in use. Choose another band"
+				redirect_to :back, notice:@band.errors
+				#render plain: " Band is already in use. Choose another band"
 			end
 	end
 	def show 
