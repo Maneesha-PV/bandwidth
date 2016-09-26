@@ -1,5 +1,3 @@
 class UserController < ApplicationController
-before_action :authenticate_user!
-	def select
-	end
+	before_action :authenticate_user!
 end
